@@ -6,7 +6,7 @@
 
         <section class="px-6 py-4">
             <header>
-                <h3 class="font-bold text-xl mn-2 text-[#245B66]">
+                <h3 :class="['font-bold text-xl mn-2', isDarkMode ? 'text-indigo-200' : 'text-cyan-700']">
                     {{ title }}
                 </h3>
             </header>
@@ -15,7 +15,7 @@
 
         <footer class="px-6 pt-4 pb-2">
             <ul class="flex flex-wrap gap-2">
-                <li v-for="(tag, index) in tags" :key="index" class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-[#2D4F61]">#{{ tag }}</li>
+                <li v-for="(tag, index) in tags" :key="index" :class="['inline-block rounded-full px-3 py-1 text-sm font-semibold', isDarkMode ? 'text-indigo-200' : 'text-cyan-700']">#{{ tag }}</li>
             </ul>
         </footer>
 

@@ -1,7 +1,7 @@
 <template>
   <header :class="[
     'fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-opacity-70',
-    isScrolled ? 'bg-gray-800 py-3 shadow-md' : 'py-8'
+    isScrolled ? 'bg-transparent py-3 shadow-md' : 'py-8'
   ]">
     <div class="flex justify-between items-center lg:px-12 px-6">
       <!-- LOGO -->
@@ -29,7 +29,7 @@
         'transition-colors duration-300 md:flex md:flex-row md:justify-between md:items-center',
         isDarkMode ? 'text-white' : 'text-cyan-500',
         'md:relative',
-        (isMenuOpen || isScrolled) ? 'fixed inset-0 flex flex-col items-center justify-center bg-[#1F1F1F]/70 backdrop-blur-md' : 'hidden md:flex'
+        (isMenuOpen || isScrolled) ? 'fixed inset-0 flex flex-col items-center justify-center bg-transparent backdrop-blur-md' : 'hidden md:flex'
       ]">
         <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
           <li v-for="item in Menu" :key="item.name">
