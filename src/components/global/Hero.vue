@@ -46,19 +46,19 @@
 
     <div class="mt-6 flex justify-center lg:justify-start">
       <Button :isDarkMode="isDarkMode" label="Contacto" />
-      <a
-        href=""
-        :class="[
-          'font-semibold text-lg w-[10rem] h-[55px] rounded-full ml-2 flex justify-center items-center',
-          isDarkMode ? 'text-[#A3B3FF]' : 'bg-gray-200 text-cyan-500'
-        ]"
-      >
-        <Icon icon="line-md:download-loop" class="text-3xl" />
-        <span
-          :class="['ml-1', isDarkMode ? 'text-gray-200' : 'text-[#1E1A4D]']"
-          >CV</span
-        >
-      </a>
+       <a
+    @click.prevent="downloadFile"
+    :class="[
+      'font-semibold text-lg w-[10rem] h-[55px] rounded-full ml-2 flex justify-center items-center',
+      isDarkMode ? 'text-[#A3B3FF]' : 'bg-gray-200 text-cyan-500'
+    ]"
+  >
+    <Icon icon="line-md:download-loop" class="text-3xl" />
+    <span
+      :class="['ml-1', isDarkMode ? 'text-gray-200' : 'text-[#1E1A4D]']"
+      >CV</span
+    >
+  </a>
     </div>
   </header>
 
@@ -98,6 +98,19 @@ import image from '../../assets/img/profile.jpg'
 const props = defineProps({
     isDarkMode: Boolean,
 })
+
+const downloadFile = () => {
+  // Importa el archivo
+  const fileUrl = new URL('@/assets/CV.pdf', import.meta.url).href;
+
+  // Crear un enlace temporal
+  const link = document.createElement('a');
+  link.href = fileUrl;
+  link.setAttribute('download', 'CV_Marina_Terán_Gallardo.pdf'); // Nombre con el que se descargará
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 </script>
 
 <style scoped>
