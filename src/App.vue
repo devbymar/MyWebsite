@@ -7,6 +7,7 @@
     <Skills :isDarkMode="isDark" />
     <Whyme :isDarkMode="isDark" />
     <Projects :isDarkMode="isDark" />
+    <Contact :isDarkMode="isDark" />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import Services from './components/global/Services.vue'
 import Skills from './components/global/Skills.vue'
 import Whyme from './components/global/Whyme.vue'
 import Projects from './components/global/Projects.vue'
+import Contact from './components/global/Contact.vue'
 
 const isDark = ref(true)
 
