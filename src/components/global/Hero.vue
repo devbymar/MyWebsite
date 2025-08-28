@@ -1,6 +1,6 @@
 <template>
-  <section :class="[
-    'relative flex justify-center items-center min-h-screen mt-20 lg:mt-0',
+  <section id="hero" :class="[
+    'relative flex justify-center items-center min-h-screen mt-20 lg:mt-0 pt-20',
     isDarkMode ? 'text-white bg-[#1F1F1F]' : 'text-cyan-500 bg-gray-200'
   ]">
     <header
@@ -37,11 +37,11 @@
         </p>
 
         <div class="mt-6 flex justify-center lg:justify-start">
-          <Button :isDarkMode="isDarkMode" label="Contacto" @click="scrollToContact" />
+          <Button :isDarkMode="isDarkMode" label="Contacto" @click="scrollToContact" style="cursor: pointer;" />
           <a @click.prevent="downloadFile" :class="[
             'font-semibold text-lg w-[10rem] h-[55px] rounded-full ml-2 flex justify-center items-center',
             isDarkMode ? 'text-[#A3B3FF]' : 'bg-gray-200 text-cyan-500'
-          ]">
+          ]" style="cursor: pointer;">
             <Icon icon="line-md:download-loop" class="text-3xl" />
             <span :class="['ml-1', isDarkMode ? 'text-gray-200' : 'text-[#1E1A4D]']">CV</span>
           </a>
