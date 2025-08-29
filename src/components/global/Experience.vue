@@ -12,7 +12,7 @@
 
                     <section class="w-full lg:w-3/4 lg:pl-4 text-center lg:text-left">
                         <header>
-                            <h3 class="text-xl md:text-2xl font-semibold uppercase">{{ item.title }}</h3>
+                            <h3 class="text-lgv md:text-2xl font-semibold uppercase">{{ item.title }}</h3>
                         </header>
                         <p class="text-sm font-semibold md:text-base">{{ item.company }}</p>
                         <p class="text-sm md:text-base">{{ item.duration }}</p>
