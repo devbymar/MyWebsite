@@ -13,7 +13,7 @@
 
 <script setup>
 import { ref, watch } from 'vue'
-import NavBar from './components/global/Navbar.vue'
+import NavBar from './components/global/NavBar.vue'
 import Hero from './components/global/Hero.vue'
 import Counter from './components/global/Counter.vue'
 import Services from './components/global/Services.vue'
