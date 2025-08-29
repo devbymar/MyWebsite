@@ -1,10 +1,10 @@
 <template>
 <!-- HEADER -->
 <header :class="[
-  'fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-xl',
+  'fixed top-0 w-screen z-50 transition-all duration-300 backdrop-blur-xl',
   isScrolled 
     ? (isDarkMode ? 'bg-black/40 shadow-md py-3' : 'bg-white/40 shadow-md py-3') 
-    : 'py-8'
+    : 'py-3'
 ]">
 
   <div class="flex flex-col md:flex-row justify-between items-center lg:px-12 px-6">
@@ -20,10 +20,10 @@
       <!-- Botón hamburguesa SOLO en móvil -->
       <div class="md:hidden z-30">
         <button class="block focus:outline-none" @click="isMenuOpen = !isMenuOpen">
-          <span v-if="isMenuOpen" :class="['text-5xl', isDarkMode ? ' text-white': 'text-[#1E1A4D]']">
+          <span v-if="isMenuOpen" :class="['text-5xl', isDarkMode ? ' text-cyan-500': 'text-[#1E1A4D]']">
             <Icon icon="material-symbols:close" />
           </span>
-          <span v-else :class="['text-5xl', isDarkMode ? ' text-white': 'text-[#1E1A4D]']">
+          <span v-else :class="['text-5xl', isDarkMode ? ' text-cyan-500': 'text-[#1E1A4D]']">
             <Icon icon="material-symbols:menu" />
           </span>
         </button>
@@ -113,4 +113,5 @@ onUnmounted(() => {
 nav {
   transition: background-color 0.3s ease;
 }
+
 </style>
