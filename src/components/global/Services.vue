@@ -10,7 +10,7 @@
                     data-aos="fade-up" :data-aos-delay="element.id * 100">
                     <div class="mt-[30px] flex justify-center relative">
                         <div class="mt-[-7px] p-[20px] relative">
-                            <img :src="element.icon" alt="services" class="h-[50px] w-[50px] relative z-[1] mx-auto" />
+                            <img :src="element.icon" alt="services" class="h-[80px] w-[80px] relative z-[1] mx-auto" />
                         </div>
                     </div>
                     <div class="p-[30px]">

@@ -53,7 +53,7 @@
     <figure class="w-12 h-12 flex justify-center items-center">
       <img :src="logo" alt="Logo" class="w-12 h-12 object-contain" />
     </figure>
-    <span>© {{ currentYear }} devbymar <span class="text-sm text-gray-500 dark:text-gray-400">All rights reserved</span></span>
+    <span>© {{ currentYear }} devbymar <span :class="['text-sm', isDarkMode ? 'text-gray-400' : 'text-cyan-500']">All rights reserved</span></span>
   </div>
 </footer>
 

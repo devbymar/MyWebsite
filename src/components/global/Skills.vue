@@ -10,7 +10,7 @@
                     class="relative flex flex-col justify-center text-center shadow-md hover:shadow-lg transition-shadow duration-300 rounded-[30px] overflow-hidden">
                     <div class="mt-8 flex justify-center items-center relative">
                         <div class="p-5 flex items-center justify-center">
-                            <img :src="tech.icon" :alt="tech.name" class="h-[40px] w-[40px] relative z-[10]" />
+                            <img :src="tech.icon" :alt="tech.name" class="h-[70px] w-[70px] relative z-[10]" />
                         </div>
                     </div>
                     <div class="p-6">
