@@ -84,8 +84,8 @@ const projects = ref([
         description: 'Juego Tictactoe o 3 en raya, desarrollado con React (Vite)',
         image: tictactoe,
         tags: ['React', 'Vite', 'CSS'],
-        liveLink: 'https://vuetifynetlifyapp.netlify.app/',
-        codeLink: 'https://github.com/devbymar/vuetify.git'
+        liveLink: 'https://my-react-tic-tac-toe.netlify.app/',
+        codeLink: 'https://github.com/devbymar/React-tic-tac-toe.git'
     }
 ])
 </script>
