@@ -42,6 +42,7 @@ import nuxt from '../../assets/icons/Nuxt.png'
 import vite from '../../assets/icons/Vite.png'
 import webpack from '../../assets/icons/Webpack.png'
 import mas from '../../assets/icons/mas.png'
+import react from '../../assets/icons/React.png'
 
 
 const props = defineProps({
@@ -93,6 +94,11 @@ const tecnologies = ref([
         id: 9,
         icon: webpack,
         name: 'Webpack',
+    },
+        {
+        id: 9,
+        icon: react,
+        name: 'React',
     }
 ])
 </script>

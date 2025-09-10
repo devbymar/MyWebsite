@@ -35,6 +35,7 @@ import weatherapp from '../../assets/img/weatherapp.png'
 import vuetifyapp from '../../assets/img/vuetifyApp.png'
 import rrss from '../../assets/img/rrss.png'
 import portfolio from '../../assets/img/portfolio.png'
+import tictactoe from '../../assets/img/tictactoe.png'
 
 const props = defineProps({
     isDarkMode: {type: Boolean, required: true, default: true },
@@ -75,6 +76,14 @@ const projects = ref([
         description: 'Proyecto realizado con Vuetify, que consiste en un log-in, TODO List, galería de imagenes (carrousel) y algunas cards que hacen uso de ciertas funcionalidades del framework.',
         image: vuetifyapp,
         tags: ['Vuetify', 'Vite', 'Vue.js'],
+        liveLink: 'https://vuetifynetlifyapp.netlify.app/',
+        codeLink: 'https://github.com/devbymar/vuetify.git'
+    },
+    {
+        title: 'React Tic-Tac-Toe',
+        description: 'Juego Tictactoe o 3 en raya, desarrollado con React (Vite)',
+        image: tictactoe,
+        tags: ['React', 'Vite', 'CSS'],
         liveLink: 'https://vuetifynetlifyapp.netlify.app/',
         codeLink: 'https://github.com/devbymar/vuetify.git'
     }
